@@ -116,3 +116,174 @@ a:hover {
     left: 0;
   }
 }
+
+.title {
+  top: -100px;
+  margin: 100px;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle{
+  top: -100px;
+  margin: 100px;
+  margin-bottom: -100px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .title{
+    margin: 50px;
+    display: flex;
+    font-size: 30px
+  }
+
+  .subtitle{
+    margin: 40px;
+    display: flex;
+    font-size: 20px;
+    margin-bottom: -70px;
+  }
+}
+
+section {
+padding: 0;
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+
+.swiper {
+display: flex;
+align-items: center;
+margin-top: -100px;
+}
+
+.card-wrapper {
+max-width: 1100px;
+margin: 0 60px 35px;
+padding: 20px 10px;
+overflow: hidden;
+}
+
+.card-list .card-item {
+list-style: none;
+}
+
+.card-list .card-item .card-link {
+display: block;
+background: #fff;
+padding: 18px;
+user-select: none;
+border-radius: 12px;
+text-decoration: none;
+border: 2px solid transparent;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+cursor: grabbing;
+}
+
+.card-title{
+  flex-grow: 1;
+  height: 100px;
+  margin: 0;
+  object-fit: cover;
+}
+
+.card-list .card-item .card-link:hover {
+border-color: #5372F0;
+}
+
+.card-list .card-link .card-image {
+width: 100%;
+border-radius: 10px 10px 10px;
+aspect-ratio: 16 / 9;
+object-fit: cover;
+}
+
+.card-list .card-link .badge {
+color: #5372F0;
+width: fit-content;
+padding: 8px 16px;
+font-size: 0.95rem;
+border-radius: 50px;
+font-weight: 500;
+background: #DDE4FF;
+margin: 16px 0 18px;
+}
+
+.card-list .card-link .badge-reciente {
+color: #B22485;
+background: #F7DFF5;
+}
+
+.card-list .card-link .badge-novedoso {
+color: #B25A2B;
+background: #FFE3D2;
+}
+
+.card-list .card-link .badge-popular {
+color: #205C20;
+background: #D6F8D6;
+}
+
+.card-list .card-link .badge-mascomprado {
+color: #856404;
+background: #fff3cd;
+}
+
+.card-list .card-link .card-title {
+color: #000;
+font-size: 1.19rem;
+font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+height: 35px;
+width: 35px;
+color: #5372F0;
+margin: 30px 0 5px;
+background: none;
+cursor: pointer;
+border-radius: 50%;
+border: 2px solid #5372F0;
+transform: rotate(-45deg);
+transition: 0.4s ease;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+height: 13px;
+width: 13px;
+opacity: 0.5;
+background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+color: #5372F0;
+margin-top: -35px;
+}
+
+@media (max-width: 768px) {
+.card-wrapper {
+  margin: 0 10px 25px;
+
+}
+
+.card-wrapper .swiper-slide-button {
+  display: none;
+}
+}
